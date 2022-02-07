@@ -41,7 +41,9 @@ Each single point crossover produces two children from two parents. An additiona
 
 Each child is mutated post crossover before passing to next generation.
 
-## CSV Columns:
+## Analysis
+
+Data for complete evolution is saved in a CSV file in the following format:
 
 -   Full name
 -   First name
@@ -57,3 +59,5 @@ Each child is mutated post crossover before passing to next generation.
 -   Container temperature
 -   Container humidity
 -   Container light
+
+Toggle the `Container` constructor parameters in `main.py` to experiment with the population.
