@@ -15,11 +15,11 @@ The container has three fixed environmental constraints defined at the initializ
 The organism has six tolerance parameters:
 
 -   Heat tolerance
--   Cold Tolerance
+-   Cold tolerance
 -   Humidity tolerance
 -   Dryness tolerance
 -   Darkness tolerance
--   Light tolerance
+-   Brightness tolerance
 
 Analogous to chromosomes, every organism has tolerance parameters for each container attribute, which collectively form the gene of the organism.The organisms adjust their tolerance over generations through evolution to the container's attributes. Every environmental constraint of the container and the tolerance parameters of the organism is scaled between 0 and 1.
 
@@ -39,7 +39,7 @@ Each single point crossover produces two children from two parents. An additiona
 
 ## Mutation
 
-Each child is mutated post crossover before passing to next generation.
+Each child is mutated based on a probabilty, post crossover before passing to next generation.
 
 ## Analysis
 
