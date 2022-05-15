@@ -224,11 +224,11 @@ class Container:
                 # print(self.population_list[0])
 
                 # Pick two fittest individuals from the population
-                # next_generation = self.population_list[:2]
                 next_generation = []
+                next_generation = self.population_list[:2]
 
                 for _ in range(
-                    int(len(self.population_list) / 2)  # -1
+                    int(len(self.population_list) / 2 - 1)
                 ):  # -1 because we have already copied one pair of fit individuals from the population
                     parent_a, parent_b = self.select_pair()
                     child_a, child_b = self.single_point_crossover(parent_a, parent_b)
