@@ -2,7 +2,8 @@ from models import Container
 
 
 def main() -> None:
-    cool_container = Container(0.2, 0.5, 0.6, 1000, 10)
+    """Driver code"""
+    cool_container = Container(0.2, 0.9, 0.8, 1000, 300)
     cool_container.run_evolution()
 
 
